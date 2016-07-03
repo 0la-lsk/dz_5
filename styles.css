@@ -1,0 +1,205 @@
+@font-face {
+	font-family: "Helvetica Neue";
+	src:url(fonts/helveticaneuecyr-light.otf);
+	font-weight: normal;
+	font-style: normal;
+}
+* {
+	padding: 0;
+	margin: 0;
+}
+html {
+	font-family: "Helvetica Neue", Tahoma;
+}
+.clearfix, .clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+header {
+	background: #085596; /* Old browsers */
+	background: -moz-linear-gradient(top, #085596 1%, #074f8d 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #085596 1%,#074f8d 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #085596 1%,#074f8d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#085596', endColorstr='#074f8d',GradientType=0 ); /* IE6-9 */
+}
+header .menu {
+	float: right;
+	margin-right: 20px;
+	padding: 5px 0;
+}
+header .menu li a {
+	cursor: pointer;
+}
+header .menu li, header .menu li a {
+	display: inline-block;
+	box-sizing: border-box;
+}
+header .menu li:hover a {
+	background: #4eabda;
+	color: #fff;
+	font-weight: bold;
+}
+header .menu li:last-of-type a:hover {
+	border: 1px solid #4f9fd9;	
+	height: 29px;
+	line-height: 29px;
+	padding: 0 11px;
+}
+header .menu li:last-of-type a:hover, form input[type="submit"] {
+	background: #50afdc; 
+	background: -moz-linear-gradient(top, #50afdc 0%, #2e7ac4 99%); 
+	background: -webkit-linear-gradient(top, #50afdc 0%,#2e7ac4 99%); 
+	background: linear-gradient(to bottom, #50afdc 0%,#2e7ac4 99%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#50afdc', endColorstr='#2e7ac4',GradientType=0 ); 
+}
+header .menu li:nth-of-type(5) {
+	border-right: 1px solid #56a2dc;
+}
+header .menu li:nth-of-type(5) a {
+	margin-right: 5px;
+}
+header .menu li a {
+	text-decoration: none;
+	color: #56a2dc;
+	height: 32px;
+	line-height: 32px;
+	padding: 0 12px;
+}
+header .menu li a img {
+	vertical-align: middle;
+	padding-right: 10px;
+}
+.main {
+	position: relative;
+	width: 100%;
+	min-width: 560px;
+	display: table;
+	background: url(img/background.jpg) no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: calc(100vh - 42px);
+	min-height: 610px;
+}
+.box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 560px;
+	height: 610px;
+	margin: auto;
+	background: rgba(0,0,0,0.45);
+}
+.box>p {
+	color: #fff;
+	text-align: center;
+	margin: 0 auto;
+}
+.box>p:first-child {
+	line-height: 62px;
+	font-size: 24px;
+	border-bottom: 2px solid #c4ccb5;
+}
+form {
+	text-align: center;
+	width: 276px;	
+	margin: 0 auto;
+	font-size: 14px;
+	line-height: 16px;
+}
+form button, form input[type="submit"] {
+	cursor: pointer;
+}
+form p.decore, form input, form button {
+	width: 100%;
+}
+form input, form button {
+	height: 35px;
+	display: block;
+	margin: 0 auto;
+	border: none;
+	margin-top: 35px;
+}
+form input {
+	background: rgba(16,16,16,0.8);
+	border-bottom: 1px solid #484948;
+}
+form button {
+	background: url(img/facebook_btn.png);
+}
+form p.decore {
+	position: relative;
+	color: #999;
+	font-size: 14px;
+	margin: 35px auto 0 auto;
+}
+form p.decore:before {
+	position: absolute;
+	content: '';
+	left: 0;
+	top: 50%;
+	width: 40%;
+	border-width: 1px;
+	border-color: #666 transparent #000;
+	border-style: solid;
+	margin-top: -1px;
+}
+form p.decore:after {
+	position: absolute;
+	height: 0;
+	width: 40%;
+	content: '';
+	right: 0;	
+	top: 50%;
+	border-width: 1px 1px;
+	border-color: #666 transparent #000;
+	border-style: solid;
+	margin-top: -1px;
+}
+form input {
+	margin-top: 15px;
+	padding-left: 19px;
+	color: #fff;
+	~font-size: 14px;
+	~line-height: 16px;
+	font-family: "Helvetica Neue";
+}
+form input:focus:not([type="checkbox"]) {
+	background: #1b5288;
+	-webkit-box-shadow: 0px 0px 7px 2px rgba(75,134,176,1);
+	-moz-box-shadow: 0px 0px 7px 2px rgba(75,134,176,1);
+	box-shadow: 0px 0px 7px 2px rgba(75,134,176,1);
+}
+::-webkit-input-placeholder {color:#ccc;font-size: 14px;}
+::-moz-placeholder          {color:#ccc;font-size: 14px;}/* Firefox 19+ */
+:-moz-placeholder           {color:#ccc;font-size: 14px;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#ccc;font-size: 14px;}
+form input[type="checkbox"] {
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	margin-left: -5px;
+	margin-right: 10px;
+	margin-top: 15px;
+	vertical-align: bottom;
+}
+form label {
+	display: inline-block;
+	color: #ccc;
+	line-height: 14px;
+}
+form input[type="submit"] {
+	margin-top: 25px;
+	width: 151px;
+	padding: 0;
+	border-radius: 3px;
+}
+.box p:last-child {
+	margin-top: 20px;
+	font-size: 11px;
+	line-height: 16px;
+	width: 310px;
+	color: #ccc;	
+}
