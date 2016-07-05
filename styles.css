@@ -27,14 +27,12 @@ header {
 header .menu {
 	float: right;
 	margin-right: 20px;
-	padding: 5px 0;
 }
 header .menu li a {
 	cursor: pointer;
 }
 header .menu li, header .menu li a {
 	display: inline-block;
-	~box-sizing: border-box;
 }
 header .menu li:hover a {
 	background: #4eabda;
@@ -46,7 +44,7 @@ header .menu li:hover a {
 	font-weight: bold;
 }
 header .menu li:last-of-type a:hover, .menu-active a {
-	border: 1px solid #4f9fd9;
+	~border: 1px solid #4f9fd9;
 }
 header .menu li:last-of-type a:hover, .menu-active a, form input[type="submit"] {
 	background: #50afdc; 
@@ -55,7 +53,7 @@ header .menu li:last-of-type a:hover, .menu-active a, form input[type="submit"] 
 	background: linear-gradient(to bottom, #50afdc 0%,#2e7ac4 99%); 
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#50afdc', endColorstr='#2e7ac4',GradientType=0 ); 
 }
-header .menu li:nth-of-type(5) {
+header .menu li:nth-of-type(5) a {
 	border-right: 1px solid #56a2dc;
 }
 header .menu li:nth-of-type(5) a {
